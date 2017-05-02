@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "19afb9c7eb467806a0c7c9b4a6a4330d",
+    "content-hash": "83582fdb0738d514d553730bb9d068b8",
     "packages": [
         {
             "name": "WordPress/WordPress",
-            "version": "4.7.3",
+            "version": "4.7.4",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/4.7.3.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.7.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -45,7 +45,7 @@
                 "forum": "https://wordpress.org/support/plugin/batcache",
                 "source": "https://github.com/Automattic/batcache"
             },
-            "time": "2016-09-09 18:37:55"
+            "time": "2016-09-09T18:37:55+00:00"
         },
         {
             "name": "composer/ca-bundle",
