@@ -1,3 +1,13 @@
+<?php
+/*
+Plugin Name: Micropost - by Evan Hildreth
+Plugin URI: http://eph.me/eph-micropost-custom-post-type
+Description: A custom post type for short-form blogging. Designed to tie into <a href="http://micro.blog/">Micro.blog</a>.
+Author: Evan Hildreth
+Version: 1.0
+Author URI: http://eph.me/
+*/
+
 // Register Custom Post Type
 function eph_micropost_initialize() {
 
