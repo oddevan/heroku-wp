@@ -50,7 +50,7 @@ function eph_ccdb_service_initposttype() {
 		'label'                 => __( 'Service', 'eph' ),
 		'description'           => __( 'Cordcutting service; child pages are higher tiers of service', 'eph' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', ),
 		'taxonomies'            => array( 'category', 'post_tag', 'eph_ccdb_channel' ),
 		'hierarchical'          => true,
 		'public'                => true,
