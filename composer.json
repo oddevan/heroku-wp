@@ -25,6 +25,7 @@
         "wpackagist-plugin/authy-two-factor-authentication": "~3",
         "wpackagist-plugin/jetpack": "~4",
         "wpackagist-plugin/sendgrid-email-delivery-simplified": "~1",
+        "wpackagist-plugin/advanced-custom-fields": "~4",
 
         "predis/predis": "~1.0",
         "wp-cli/wp-cli": "^1.0"
