@@ -26,7 +26,10 @@
         "wpackagist-plugin/advanced-custom-fields": "~4",
 
         "predis/predis": "~1.0",
-        "wp-cli/wp-cli": "^1.0"
+        "wp-cli/wp-cli": "^1.0",
+
+        "wpackagist-plugin/wordpress-importer": "~0.6",
+        "wpackagist-plugin/rss-importer": "~0.2"
     },
     "suggest": {
         "wpackagist-plugin/cloudflare-cache-purge": "Purges cached pages on CF.",
