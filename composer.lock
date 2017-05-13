@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e79e72e81350fe01269d1f0c93292ff",
+    "content-hash": "b829e33dd608f10abc36da33bb2e84a5",
     "packages": [
         {
             "name": "WordPress/WordPress",
@@ -1764,26 +1764,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redis-cache/"
-        },
-        {
-            "name": "wpackagist-plugin/rss-importer",
-            "version": "0.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/rss-importer/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/rss-importer.zip?timestamp=1485604069",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/rss-importer/"
         },
         {
             "name": "wpackagist-plugin/secure-db-connection",
