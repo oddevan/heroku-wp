@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f27fbd8a46a960581be6952bbfe00981",
+    "content-hash": "efa7b3ef866a925ec92cb5b922fad7dc",
     "packages": [
         {
             "name": "WordPress/WordPress",
@@ -1746,16 +1746,16 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "4.9",
+            "name": "wpackagist-plugin/jetpack-markdown",
+            "version": "3.9.6",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/4.9"
+                "url": "https://plugins.svn.wordpress.org/jetpack-markdown/",
+                "reference": "tags/3.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.4.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack-markdown.3.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1763,7 +1763,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/jetpack/"
+            "homepage": "https://wordpress.org/plugins/jetpack-markdown/"
         },
         {
             "name": "wpackagist-plugin/redis-cache",
