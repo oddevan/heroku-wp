@@ -50,7 +50,7 @@ function eph_ccdb_service_initposttype() {
 		'label'                 => __( 'Service', 'eph' ),
 		'description'           => __( 'Cordcutting service; child pages are higher tiers of service', 'eph' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', ),
+		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', 'wpcom-markdown' ),
 		'taxonomies'            => array( 'eph_ccdb_channel' ),
 		'hierarchical'          => true,
 		'public'                => true,
@@ -118,3 +118,100 @@ function eph_ccdb_channel_generatetaxonomy() {
 
 }
 add_action( 'init', 'eph_ccdb_channel_generatetaxonomy', 0 );
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_service-information',
+		'title' => 'Service Information',
+		'fields' => array (
+			array (
+				'key' => 'field_5911107537f95',
+				'label' => 'Tied to home address',
+				'name' => 'eph_ccdb_tiedtoaddress',
+				'type' => 'true_false',
+				'instructions' => 'Does the service require a home address? Does the service behave differently inside/outside the home?',
+				'message' => '',
+				'default_value' => 0,
+			),
+			array (
+				'key' => 'field_591111ac37f96',
+				'label' => 'TV Everywhere',
+				'name' => 'eph_ccdb_tveverywhere',
+				'type' => 'true_false',
+				'instructions' => 'Does the service allow TV Everywhere authentication more often than not? (Can you sign into most TV channel apps using this service?)',
+				'message' => '',
+				'default_value' => 0,
+			),
+			array (
+				'key' => 'field_591112f59a3a6',
+				'label' => 'Category Link',
+				'name' => 'eph_ccdb_catlink',
+				'type' => 'taxonomy',
+				'instructions' => 'What is the category for blog posts about this service?',
+				'taxonomy' => 'category',
+				'field_type' => 'select',
+				'allow_null' => 1,
+				'load_save_terms' => 0,
+				'return_format' => 'id',
+				'multiple' => 0,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'eph_ccdb_service',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_tier-information',
+		'title' => 'Tier Information',
+		'fields' => array (
+			array (
+				'key' => 'field_5911177ccd851',
+				'label' => 'Tier Price',
+				'name' => 'eph_ccdb_tierprice',
+				'type' => 'number',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'min' => '',
+				'max' => '',
+				'step' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'eph_ccdb_service',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 7,
+	));
+}
+
