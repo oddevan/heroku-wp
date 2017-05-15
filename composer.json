@@ -25,6 +25,7 @@
         "wpackagist-plugin/sendgrid-email-delivery-simplified": "~1",
         "wpackagist-plugin/advanced-custom-fields": "~4",
         "wpackagist-plugin/jetpack-markdown": "~3",
+        "wpackagist-plugin/duplicate-page": "~2",
 
         "predis/predis": "~1.0",
         "wp-cli/wp-cli": "^1.0",
