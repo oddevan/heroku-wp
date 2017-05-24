@@ -1,0 +1,3 @@
+[submodule "public/wp-content/plugins/jsonfeed-wp"]
+	path = public/wp-content/plugins/jsonfeed-wp
+	url = https://github.com/manton/jsonfeed-wp.git
