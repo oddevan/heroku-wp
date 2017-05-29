@@ -26,6 +26,7 @@
         "wpackagist-plugin/advanced-custom-fields": "~4",
         "wpackagist-plugin/jetpack-markdown": "~3",
         "wpackagist-plugin/duplicate-page": "~2",
+        "wpackagist-plugin/jsonfeed": "~1",
 
         "predis/predis": "~1.0",
         "wp-cli/wp-cli": "^1.0",
